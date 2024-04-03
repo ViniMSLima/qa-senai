@@ -21,19 +21,40 @@ body {
     align-items: center;
 }
 
-button {
+.button {
     width: 20vw;
     height: 30px;
     border: none;
     margin-top: 10px;
-    border-radius: 10px;
-
+    border-radius: 50px;
 }
 
-button:hover {
+.button:hover {
     background-color: darkgrey;
     cursor: pointer;
     transform: scale(0.98);
     transition: 0.3s;
-    
+}
+
+body.dark-mode {
+    background-color: #272727;
+    color: #fff;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode button {
+    color: #fff;
+}
+
+body.dark-mode .input input,
+body.dark-mode .input textarea {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .button {
+    background-color: #555;
+    color: #fff;
 }

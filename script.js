@@ -1,6 +1,7 @@
 var nomeGlobal;
 var mensagemGlobal;
 var dateGlobal;
+var style;
 
 function conferirMensagemWhatsApp() {
     var nome = document.getElementById("nome").value;
@@ -36,4 +37,10 @@ function enviar() {
 
 function format(data) {
 
+}
+
+function darkmode() {
+    var body = document.body;
+    body.classList.toggle('dark-mode');
+    body.classList.toggle('light-mode');
 }
