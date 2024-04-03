@@ -35,10 +35,6 @@ function enviar() {
     window.open(linkWhatsApp, '_blank');
 }
 
-function format(data) {
-
-}
-
 function darkmode() {
     var body = document.body;
     body.classList.toggle('dark-mode');
