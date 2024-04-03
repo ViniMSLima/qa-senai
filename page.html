@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="roboto-regular">Contato</h1>
+
+  <h2 class="roboto-regular">Insira dados iniciais para envio</h2>
+  <div class="input">
+    <label class="roboto-regular" for="nome">Seu nome:</label>
+    <input type="text" id="nome" />
+  </div>
+
+  <div class="input">
+    <label class="roboto-regular" for="mensagem">Observações:</label>
+    <textarea type="text" id="mensagem"></textarea>
+  </div>
+
+  <button onclick="conferirMensagemWhatsApp()">Conferir Mensagem</button>
+
+  <div id="conf">
+    <p>Nome: <span id="confNome"></span></p>
+    <p>Observações: <span id="confMsg"></span></p>
+    <p>Data: <span id="confDate"></span></p>
+    <button onclick="enviar()">Enviar Mensagem</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
